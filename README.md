@@ -58,4 +58,7 @@ comparativo Ingresos vs LY, dispersión COGS vs %margen.
 	1.	Descarga y abre AdventureWorks_Sales.pbix en Power BI Desktop.
 	2.	Si conectas al DW original, refresca y valida las medidas.
 
+
+
+
 Autor: Eric Sanchez — Data Analyst (Admin & Finance)
