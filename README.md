@@ -37,6 +37,20 @@ Relaciones **1-N (estrella)** entre dimensiones y **`FactInternetSales`**.
 
 ---
 
+## 🖼️ Dashboards (capturas)
+
+<p align="center">
+  <img src="img/adventureworks1.jpeg" alt="Dashboard Financiero - AdventureWorks" width="95%">
+</p>
+
+<p align="center">
+  <img src="img/adventureworks2.jpeg" alt="Dashboard Detalle USA - AdventureWorks" width="95%">
+</p>
+
+> *Tip:* haz clic derecho → **Open image in new tab** para ver a tamaño completo.
+
+---
+
 ## 📐 Medidas DAX (extracto)
 
 ```DAX
@@ -48,30 +62,34 @@ UtilidadBruta  = [TotalIngresos] - [COGS]
 TotalIngresosLY =
   CALCULATE([TotalIngresos], DATEADD(DimDate[FullDateAlternateKey], -1, YEAR))
 
-📄 Páginas
-	•	Financiero: KPIs (Ingresos, UB, UN, COGS), %márgenes, combo por mes, mapa por país.
-	•	Detalle USA: matriz (Estado ► Ciudad ► Categoría ► Subcategoría), comparativo Ingresos vs LY, dispersión COGS vs %margen.
+Páginas
+	•	Financiero: KPIs (Ingresos, UB, UN, COGS), % márgenes, combo por mes, mapa por país.
+	•	Detalle USA: matriz (Estado ► Ciudad ► Categoría ► Subcategoría), comparativo Ingresos vs LY, dispersión COGS vs % margen.
 
-⸻
-
-🔎 Hallazgos
+Hallazgos
 	•	2014: ≈ $29M ingresos; COGS ≈ $17M; UB ≈ $12M; UN ≈ $9M.
-	•	Ratio de costo ligeramente ↑ vs LY; márgenes bruto ~43 % / neto ~31 %.
-	•	Estados top: CA, FL, NY; ciudades con COGS alto pero margen estable (p. ej., Bellflower).
+	•	Ratio de costo levemente ↑ vs LY; márgenes bruto ~43 % / neto ~31 %.
+	•	Estados top: CA, FL, NY; ciudades con COGS alto pero margen estable (ej.: Bellflower).
 
 ⸻
 
 ▶️ Abrir
-	1.	Descarga y abre AdventureWorks Sales (PBIX) en Power BI Desktop.
+	1.	Descarga y abre Adventureworks.pbix en Power BI Desktop.
 	2.	Si conectas al DW original, refresca y valida las medidas.
+
+⸻
+
+📁 Estructura (resumen)
 
 powerbi-adventureworks-sales/
 ├─ README.md
-├─ adventureworks.pbix                         # archivo del informe (PBIX)
+├─ adventureworks.pbix
 ├─ docs/
-│  ├─ adventureworks.pdf              # informe/presentación
-│  └─ mockup adventureworks.pptx      # mockup
+│  ├─ adventureworks.pdf
+│  └─ mockup adventureworks.pptx
 └─ img/
-   └─ diagrama.jpeg                   # modelo (relaciones)
+   ├─ diagrama.jpeg
+   ├─ adventureworks1.jpeg
+   └─ adventureworks2.jpeg
 
-Autor: Eric Sanchez — Data Analyst (Admin & Finance)
+Autor: Eric Sanchez 
